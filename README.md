@@ -1,36 +1,131 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 CurriculAI
 
-## Getting Started
+> AI-powered course generator built with Next.js  
+> Transform any topic into a structured, chapter-based learning experience.
 
-First, run the development server:
+---
+
+## 🌟 Overview
+
+CurriculAI is an AI-powered learning platform that dynamically generates structured courses across multiple domains such as Programming, Health, Creative Arts, Career Development, and Academics.
+
+The platform creates:
+
+- 📚 Organized course outlines  
+- 📝 AI-generated explanations  
+- 💻 Code snippets (for technical courses)  
+- 🎥 Embedded video support  
+- 🎯 Structured learning progression  
+
+Built with modern SaaS-style architecture and a clean, responsive UI.
+
+---
+
+## ✨ Features
+
+- 🔐 Authentication with Clerk  
+- 🧠 AI-powered course generation  
+- 📂 Category-based course builder  
+- 🧭 Multi-step course creation wizard  
+- 📖 Dynamic chapter rendering  
+- 🎥 YouTube video integration  
+- 🎨 Modern UI with Tailwind CSS  
+- 🚀 Upgrade-ready SaaS structure  
+- 📱 Fully responsive design  
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+- Next.js (App Router)  
+- React  
+- Tailwind CSS  
+- React Icons / Lucide  
+
+### Backend
+- Next.js API Routes  
+- AI API integration  
+
+### Authentication
+- Clerk  
+
+### State Management
+- React Context API  
+
+---
+
+## 🎯 How It Works
+
+1. Select a course category.  
+2. Enter a topic and preferences.  
+3. AI generates a structured course.  
+4. Chapters dynamically render with explanations and video integration.  
+5. Users navigate through a clean dashboard interface.  
+
+---
+
+## 🚀 Getting Started
+
+### Clone the repository
+
+```bash
+git clone https://github.com/Krithika1627/CurriculAI.git
+cd CurriculAI
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Add environment variables
+
+Create a `.env.local` file in the root directory and add:
+
+```
+CLERK_SECRET_KEY=your_clerk_secret_key
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+
+NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_api_key
+DATABASE_URL=your_database_connection_string
+YOUTUBE_API_KEY=your_youtube_api_key
+```
+
+> ⚠️ Do not commit real API keys to GitHub.
+
+### Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and visit:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🔮 Future Improvements
 
-To learn more about Next.js, take a look at the following resources:
+- 💳 Stripe integration for Pro plans  
+- 📄 PDF export for generated courses  
+- 📊 Progress tracking system  
+- 🤝 Course sharing and collaboration  
+- 🧠 Enhanced AI personalization  
+- 🌗 Light/Dark theme support  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🌍 Live Demo
 
-## Deploy on Vercel
+Deployment coming soon.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 👩‍💻 Author
+
+**Krithika V**
