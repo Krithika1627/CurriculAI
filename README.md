@@ -45,7 +45,11 @@ Built with modern SaaS-style architecture and a clean, responsive UI.
 
 ### Backend
 - Next.js API Routes  
-- AI API integration  
+- AI API integration
+
+### Database
+- PostgreSQL (Neon)
+- Drizzle ORM
 
 ### Authentication
 - Clerk  
