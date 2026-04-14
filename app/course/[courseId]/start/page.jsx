@@ -20,7 +20,7 @@ function CourseStart() {
     getCourse();
   }, [params?.courseId]);
 
-  // 🔹 Fetch course + auto-load first chapter
+  // Fetch course + auto-load first chapter
   const getCourse = async () => {
     try {
       const res = await fetch(`/api/course/${params.courseId}`);
@@ -37,7 +37,7 @@ function CourseStart() {
 
         setCourseOutput(parsedOutput);
 
-        // ✅ Auto-load first chapter
+        // Auto-load first chapter
         const firstChapter = parsedOutput.chapters[0];
         setSelectedChapter(firstChapter);
         fetchChapterContent(0, firstChapter, courseData.courseId);
@@ -49,7 +49,7 @@ function CourseStart() {
     }
   };
 
-  // 🔹 Fetch chapter content from DB
+  // Fetch chapter content from DB
   const fetchChapterContent = async (chapterIndex, chapterMeta, courseId) => {
     if (chapterIndex === undefined || !courseId) return;
 
@@ -68,7 +68,7 @@ function CourseStart() {
     setChapterContent(data.data);      // DB content
   };
 
-  // 🔹 Loading state
+  // Loading state
   if (loading || !courseOutput) {
     return (
       <div className="h-screen flex items-center justify-center text-muted-foreground">

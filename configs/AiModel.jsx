@@ -30,7 +30,6 @@ const ai = new GoogleGenAI({
   apiKey: process.env.NEXT_PUBLIC_GEMINI_API_KEY,
 });
 
-// ---------------- EXISTING FUNCTION ----------------
 export async function GenerateCourseLayout_AI(userPrompt) {
   try {
     const tools = [{ googleSearch: {} }];
@@ -76,7 +75,6 @@ ${userPrompt}
   }
 }
 
-// ---------------- NEW FUNCTION ----------------
 export async function GenerateChapterContent_AI(course, chapter) {
   try {
     const tools = [{ googleSearch: {} }];

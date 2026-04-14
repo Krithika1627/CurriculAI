@@ -4,7 +4,6 @@ import { Chapters } from "../../../../configs/schema";
 import { and, eq } from "drizzle-orm";
 
 export async function GET(req, context) {
-  // ✅ THIS IS THE FIX
   const { chapterId } = await context.params;
 
   const { searchParams } = new URL(req.url);

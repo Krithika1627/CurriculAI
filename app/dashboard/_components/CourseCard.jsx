@@ -32,13 +32,13 @@ function CourseCard({course,displayUser=false}) {
 
   return (
     <div className='bg-card text-card-foreground
-  border border-border
-  rounded-xl
-  p-3 mt-4
-  transition-all duration-300
-  hover:-translate-y-1
-  hover:shadow-md
-  cursor-pointer'>
+                    border border-border
+                    rounded-xl
+                    p-3 mt-4
+                    transition-all duration-300
+                    hover:-translate-y-1
+                    hover:shadow-md
+                    cursor-pointer'>
       <Link href={'/course/'+course?.courseId}>
         <Image src={course?.courseBanner} width={300} height={200} className='w-full h-[200px] object-cover rounded' alt='img'/>
       </Link>
@@ -51,17 +51,17 @@ function CourseCard({course,displayUser=false}) {
             </h2>  
             
             <p className='text-sm text-gray-400'>{course?.category}</p> 
-        </div>
-        <div className='flex items-center justify-between my-1'>
-            <h2 className='flex gap-2 items-center p-1 text-sm'><HiBookOpen />
-            {output?.chapters?.length} Chapters</h2>
-            <h2 className='text-sm'>{course?.level}</h2>
-        </div>
+            </div>
+            <div className='flex items-center justify-between my-1'>
+                <h2 className='flex gap-2 items-center p-1 text-sm'><HiBookOpen />
+                {output?.chapters?.length} Chapters</h2>
+                <h2 className='text-sm'>{course?.level}</h2>
+            </div>
 
-        {displayUser&&<div className='flex gap-2 items-center mt-2'>
-          <Image src={course.userProfileImage} width={30} height={30} className='rounded-full'/>
-          <p className='text-sm'>{course?.userName}</p>
-        </div>}
+            {displayUser&&<div className='flex gap-2 items-center mt-2'>
+              <Image src={course.userProfileImage} width={30} height={30} className='rounded-full'/>
+              <p className='text-sm'>{course?.userName}</p>
+            </div>}
 
     </div>
   )

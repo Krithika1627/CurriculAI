@@ -3,7 +3,7 @@
 import * as React from "react";
 import { cn } from "../../lib/utils";
 
-// --- The actual Progress component ---
+// Progress component
 const Progress = React.forwardRef(({ className, value, ...props }, ref) => {
   return (
     <div
@@ -24,7 +24,6 @@ const Progress = React.forwardRef(({ className, value, ...props }, ref) => {
 
 Progress.displayName = "Progress";
 
-// --- Optional demo component (same file) ---
 export function ProgressDemo() {
   const [progress, setProgress] = React.useState(13);
 
